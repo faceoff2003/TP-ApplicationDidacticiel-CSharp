@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB186882-9E99-4BB1-AC8A-720BDA695935}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApplicationDidacticiel2022Soulayman</RootNamespace>
+    <AssemblyName>ApplicationDidacticiel2022Soulayman</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuiz.Designer.cs">
+      <DependentUpon>FrmQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Didacticiel.cs" />
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionDesQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionDesQuestions.Designer.cs">
+      <DependentUpon>FrmGestionDesQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionUtilisateur.Designer.cs">
+      <DependentUpon>FrmGestionUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRapportDesQuestionnaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRapportDesQuestionnaires.Designer.cs">
+      <DependentUpon>FrmRapportDesQuestionnaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RapportQuestionnaire.cs" />
+    <Compile Include="TableauDeBord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableauDeBord.Designer.cs">
+      <DependentUpon>TableauDeBord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilisateurs.cs" />
+    <EmbeddedResource Include="FrmQuiz.resx">
+      <DependentUpon>FrmQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionDesQuestions.resx">
+      <DependentUpon>FrmGestionDesQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionUtilisateur.resx">
+      <DependentUpon>FrmGestionUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRapportDesQuestionnaires.resx">
+      <DependentUpon>FrmRapportDesQuestionnaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TableauDeBord.resx">
+      <DependentUpon>TableauDeBord.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1322104312-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fonds-ecran-paysage-magnifique-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_add_user_16734.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjoutQuestions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deconnexion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TesterDidac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapportQuestionniares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Questions.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
