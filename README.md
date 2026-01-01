@@ -77,7 +77,7 @@ L’objectif était de construire une **application didacticielle complète** en
 
 ### Page de connexion
 ![Login](screenshots/login1.png)
-![Login](screenshots/logi2.png)
+![Login](screenshots/login2.png)
 ![Login](screenshots/login3.png)
 
 ### Gestion des utilisateurs
